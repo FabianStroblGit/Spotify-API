@@ -10,3 +10,4 @@ Go to Dashboard
 
 <img width="269" alt="Bildschirmfoto 2023-11-05 um 11 39 00" src="https://github.com/FabianStroblGit/Spotify-API/assets/117905035/323f055f-16f1-4ff4-97bf-e4e73ef69297">
 
+<img width="1440" alt="Bildschirmfoto 2023-11-05 um 11 40 47" src="https://github.com/FabianStroblGit/Spotify-API/assets/117905035/f461e007-31df-4050-aef0-b580200516cb">
