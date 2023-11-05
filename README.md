@@ -1,6 +1,5 @@
 # Spotify-API
-This project lets you pause and play spotify on a basic UI, as well as play different playlists. 
-
+This project showcases the basic usages of the Spotify API and the libary spotipy
 # Self use 
 To use this for yourself, you have to change the client_id and client_secret to your own in the play.py file.
 ``` Python
