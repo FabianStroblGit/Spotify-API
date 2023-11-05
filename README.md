@@ -20,8 +20,9 @@ Then click on Settings in the top right corner, there are your client_id and cli
 
 Copy them and paste them into the play.py file.
 
-`` sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id='469df447cd194ee9bc7ad82ff6db34a5',
+```
+sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id='469df447cd194ee9bc7ad82ff6db34a5',
                                                client_secret='3162b2478479467cbc3f601a861e6c5b',
                                                redirect_uri='http://localhost:8080/',
                                                scope='user-modify-playback-state')) 
-´´
+```
