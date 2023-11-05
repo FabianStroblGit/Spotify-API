@@ -9,13 +9,13 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=<your_client_id>,
                                                redirect_uri='http://localhost:8080/',
                                                scope='user-modify-playback-state')) 
 ```
-If you dont know how to get those values, here is an explenation.
+If you dont know how to get those values, [here](#how-to-get-client_id-and-client_secret) is an explenation.
 
 
 
 
 
-
+# How to get Client_id and Client_secret
 To use this for yourself, you habe to change the client_id and client_secret in the play.py file. 
 
 Go to https://developer.spotify.com/ and log in with your spotify account. 
