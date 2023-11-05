@@ -1,5 +1,10 @@
 # Spotify-API
-This project showcases the basic usages of the Spotify API and the libary spotipy
+This project showcases the basic usages of the Spotify API and the libary spotipy.
+It contains an UI with several uses:
+- play and pause music
+- play a song / playlist specified in the code
+- search and play a song
+  
 # Self use 
 To use this for yourself, you have to change the client_id and client_secret to your own in the play.py file.
 ``` Python
