@@ -16,7 +16,7 @@ If you dont know how to get those values, [here](#how-to-get-client_id-and-clien
 
 
 # How to get Client_id and Client_secret
-To use this for yourself, you habe to change the client_id and client_secret in the play.py file. 
+First have have to Create a Spotify Developer account.
 
 Go to https://developer.spotify.com/ and log in with your spotify account. 
 
