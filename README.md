@@ -8,7 +8,7 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=<your_client_id>,
                                                redirect_uri='http://localhost:8080/',
                                                scope='user-modify-playback-state')) 
 ```
-If you dont know how to get those values, [here](#how-to-get-client_id-and-client_secret) is an explenation.
+If you dont know how to get those, [here](#how-to-get-client_id-and-client_secret) is an explenation.
 
 # Use ur own playlists
 First you have to get the link to the playlist. This can be done by going into Spotify, then rightclicking the playlist, clicking on share and copying the link. The result will look like the following: https://open.spotify.com/playlist/37i9dQZF1DX4jP4eebSWR9?si=9f23f9c1a8584730
