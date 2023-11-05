@@ -13,3 +13,7 @@ Click an your account in the top right corner and and go to Dashboard.
 Create an App
 
 <img width="1439" alt="Bildschirmfoto 2023-11-05 um 11 43 19" src="https://github.com/FabianStroblGit/Spotify-API/assets/117905035/38d7caed-31c3-415e-829f-ccf8e946e826">
+
+Then click on Settings in the top right corner, there are your client_id and client_secret
+
+![Uploading Bildschirmfoto 2023-11-05 um 11.45.09.png…]()
