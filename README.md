@@ -2,6 +2,20 @@
 This project lets you pause and play spotify on a basic UI, as well as play different playlists. 
 
 # Self use 
+To use this for yourself, you have to change the client_id and client_secret to your own in the play.py file.
+``` Python
+sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=<your_client_id>,
+                                               client_secret=<your_client_secret>,
+                                               redirect_uri='http://localhost:8080/',
+                                               scope='user-modify-playback-state')) 
+```
+If you dont know how to get those values, here is an explenation.
+
+
+
+
+
+
 To use this for yourself, you habe to change the client_id and client_secret in the play.py file. 
 
 Go to https://developer.spotify.com/ and log in with your spotify account. 
