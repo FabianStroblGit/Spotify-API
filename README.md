@@ -16,4 +16,12 @@ Create an App
 
 Then click on Settings in the top right corner, there are your client_id and client_secret
 
-![Uploading Bildschirmfoto 2023-11-05 um 11.45.09.png…]()
+<img width="1420" alt="Bildschirmfoto 2023-11-05 um 11 45 40" src="https://github.com/FabianStroblGit/Spotify-API/assets/117905035/8dbcc6ba-6d94-40c7-8360-e74d857de94d">
+
+Copy them and paste them into the play.py file.
+
+`` sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id='469df447cd194ee9bc7ad82ff6db34a5',
+                                               client_secret='3162b2478479467cbc3f601a861e6c5b',
+                                               redirect_uri='http://localhost:8080/',
+                                               scope='user-modify-playback-state')) 
+´´
