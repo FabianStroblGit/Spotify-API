@@ -10,18 +10,25 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id='c35b4a04113d4dc6b70477
 
 # the playlists
 # feel free to change them
-uris = [
-'0mFJCyKyW3nZS1GNbfMZY9', #gym
-'37i9dQZEVXcBYzyq5963Jf', #mix
-'2SIoGgxJQvDfNMVNaqzR9r', #lofi
-'3s6gW3ERpwFncWhi4ynmjz', #study
-'2Xt965bzJpBb2JMR6YyGTa'  #sound
-]
+song_uri = '4cOdK2wGLETKBW3PvgPWqT'
+top_50_global_uri = '37i9dQZEVXbMDoHDwVN2tF'
+t = '6U6mg5goDZbyTYu704iIcv'
 
 # pauses music if number != -1, plays music if number = 1
-def pause(number):
-    sp.pause_playback() if number == -1 else sp.start_playback()
+def pause():
+    sp.pause_playback() 
+    
+def play():
+     sp.start_playback()
     
 # plays the playlist from the uirs array   
-def play(number):
-    sp.start_playback(context_uri='spotify:playlist:'+uris[number])
+def play_playlist():
+    sp.start_playback(context_uri='spotify:playlist:'+top_50_global_uri)
+
+song_uri = '4cOdK2wGLETKBW3PvgPWqT'
+t = '6U6mg5goDZbyTYu704iIcv'
+
+def play_song():
+    sp.start_playback(uris=['spotify:track:' + song_uri])
+
+

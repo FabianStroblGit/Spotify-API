@@ -3,9 +3,6 @@ import tkinter as tk
 import play 
 
 
-def button_click(number):
-    play.pause(number) if number < 0 else play.play(number)      
-
 window = tk.Tk()
 window.geometry("900x450") # set window resolution 
 
@@ -17,22 +14,26 @@ frame2 = tk.Frame(window)
 frame2.pack(side=tk.TOP, padx=10, pady=10, fill=tk.BOTH, expand=True)
 
 # create the buttons and add them to the frames
-button1 = tk.Button(frame1, text="Play", font=("Arial", 20), command=lambda: button_click(-2))
+button1 = tk.Button(frame1, text="Play", font=("Arial", 20), command=lambda: play.play())
 button1.pack(side=tk.LEFT, padx=10, pady=10, fill=tk.BOTH, expand=True)
 
-button2 = tk.Button(frame1, text="Gym", font=("Arial", 20), command=lambda: button_click(0))
+# uris[0]
+button2 = tk.Button(frame1, text="Play a song", font=("Arial", 20), command=lambda: play.play_song())
 button2.pack(side=tk.LEFT, padx=10, pady=10, fill=tk.BOTH, expand=True)
 
-button3 = tk.Button(frame1, text="Mix", font=("Arial", 20), command=lambda: button_click(1))
+# uris[1]
+button3 = tk.Button(frame1, text="Top 50 Global", font=("Arial", 20), command=lambda: play.play_playlist())
 button3.pack(side=tk.LEFT, padx=10, pady=10, fill=tk.BOTH, expand=True)
 
-button4 = tk.Button(frame2, text="Pause", font=("Arial", 20), command=lambda: button_click(-1))
+button4 = tk.Button(frame2, text="Pause", font=("Arial", 20), command=lambda: play.pause())
 button4.pack(side=tk.LEFT, padx=10, pady=10, fill=tk.BOTH, expand=True)
 
-button5 = tk.Button(frame2, text="Study", font=("Arial", 20), command=lambda: button_click(2))
+# uris[2]
+button5 = tk.Button(frame2, text="Study", font=("Arial", 20), command=lambda: play.pause())
 button5.pack(side=tk.LEFT, padx=10, pady=10, fill=tk.BOTH, expand=True)
 
-button6 = tk.Button(frame2, text="Sound", font=("Arial", 20), command=lambda: button_click(3))
+# uris[3]
+button6 = tk.Button(frame2, text="Sound", font=("Arial", 20), command=lambda: play.pause())
 button6.pack(side=tk.LEFT, padx=10, pady=10, fill=tk.BOTH, expand=True)
 
 
