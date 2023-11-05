@@ -14,7 +14,25 @@ If you dont know how to get those values, [here](#how-to-get-client_id-and-clien
 # Use ur own playlists
 First you have to get the link to the playlist. This can be done by going into Spotify, then rightclicking the playlist, clicking on share and copying the link. The result will look like the following: https://open.spotify.com/playlist/37i9dQZF1DX4jP4eebSWR9?si=9f23f9c1a8584730
 
+The important part for this implementation ist 37i9dQZF1DX4jP4eebSWR9, so just cut the rest.
 
+Paste this in the uris array in play.py.
+
+```Python
+uris = [
+'0mFJCyKyW3nZS1GNbfMZY9', #gym
+'37i9dQZEVXcBYzyq5963Jf', #mix
+'2SIoGgxJQvDfNMVNaqzR9r', #lofi
+'3s6gW3ERpwFncWhi4ynmjz', #study
+'2Xt965bzJpBb2JMR6YyGTa'  #sound
+]
+```
+and you can change the name accordingly in main.py
+
+```Python
+button2 = tk.Button(frame1, text=<your_playlist-name>, font=("Arial", 20), command=lambda: button_click(0))
+button2.pack(side=tk.LEFT, padx=10, pady=10, fill=tk.BOTH, expand=True)
+```
 
 # How to get Client_id and Client_secret
 First have have to Create a Spotify Developer account.
