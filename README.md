@@ -30,6 +30,7 @@ uris = [
 and you can change the name accordingly in main.py
 
 ```Python
+# uris[0]
 button2 = tk.Button(frame1, text=<your_playlist-name>, font=("Arial", 20), command=lambda: button_click(0))
 button2.pack(side=tk.LEFT, padx=10, pady=10, fill=tk.BOTH, expand=True)
 ```
