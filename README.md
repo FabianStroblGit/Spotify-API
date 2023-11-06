@@ -40,8 +40,14 @@ sp.pause_playback()
 - pressing 'Play a song' plays the default song set by the author. It also uses the start_playback function of SpotifyOAuth
  ```Python
 default_song_id = '4cOdK2wGLETKBW3PvgPWqT'
-sp.pause_playback(default_song_id)
-``` 
+sp.start_playback(uris=['spotify:track:' + default_song_id])
+```
+
+. pressong 'Play a playlist` plays the default playlist set by the author. It also uses the start_playback function of SpotifyOAuth
+ ```Python
+defualt_playlist_id = '37i9dQZEVXbMDoHDwVN2tF'
+sp.start_playback(context_uri='spotify:playlist:' + defualt_playlist_id)
+```
 
 
 # Change default song or playlist
