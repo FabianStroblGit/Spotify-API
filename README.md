@@ -1,5 +1,5 @@
 # Spotify-API
-This Project showcases the basic usages of Spotify API. It can be operated by a simple UI to:
+This Project showcases the basic usages of Spotify API via Python. It can be operated by a simple UI to:
 - play and pause music
 - play a song / playlist specified in the code
 - search and play a song or a playlist 
