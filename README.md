@@ -59,6 +59,13 @@ query_url = url + query
 result = requests.get(query_url, headers=headers)
 ```
 
+Then the name, id and the artist are extracted from the result. 
+```Python
+name = json_result["tracks"]["items"][0]["name"]
+artist = json_result["tracks"]["items"][0]["artists"][0]["name"]
+print(f"Playing the song {name} by {artist}")
+return json_result["tracks"]["items"][0]["id"]
+```
 
 # Change default song or playlist
 In the main.py file there are 2 variable for a default song an playlist.
