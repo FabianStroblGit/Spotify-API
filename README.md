@@ -5,6 +5,12 @@ This Project showcases the basic usages of Spotify API. It can be operated by a 
 - search and play a song or a playlist 
 
 # How it works
+- An instanze of SpotifyOAuth is created using your Spotify client_id and client_secret.(More on this [later](#use-it-yourself).
+
+- A n authentication header is generated in search.py to be used later to search for a song or playlist.
+
+- The UI is created using tkinter 
+
 
 # Use it yourself
 To use this for yourself, you have to change the client_id and client_secret to your own in the main.py file.
