@@ -3,7 +3,9 @@ This Project showcases the basic usages of Spotify API. It can be operated by a 
 - play and pause music
 - play a song / playlist specified in the code
 - search and play a song or a playlist 
-  
+
+# How it works
+
 # Use it yourself
 To use this for yourself, you have to change the client_id and client_secret to your own in the main.py file.
 ``` Python
@@ -20,8 +22,13 @@ default_song_id = '4cOdK2wGLETKBW3PvgPWqT'
 default_playlist_id = '37i9dQZEVXbMDoHDwVN2tF'
 ```
 The playlist is 'Top 50 Global', you can try for yourself what the song is. 
+
 To change those you need the song or playlist id, you can go into Spotify and choose a song or a playlist. Then right click it (or press the 3 dots) and press share -> copy songlink. The link will look like the following: 
+
+
 https://open.spotify.com/intl-de/track/4cOdK2wGLETKBW3PvgPWqT?si=79c891f1078b4f48
+
+
 The only important part is after the last / and before the ?, in this case '4cOdK2wGLETKBW3PvgPWqT'. Now replace the default_song_id or default_playlist_id with the new value.
 
 
