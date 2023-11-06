@@ -1,43 +1,30 @@
 # Spotify-API
-This project showcases the basic usages of the Spotify API and the libary spotipy.
-It contains an UI with several uses:
+This Project showcases the basic usages of Spotify API. It can be operated by a simple UI to:
 - play and pause music
 - play a song / playlist specified in the code
-- search and play a song
+- search and play a song or a playlist 
   
-# Self use 
-To use this for yourself, you have to change the client_id and client_secret to your own in the play.py file.
+# Use it yourself
+To use this for yourself, you have to change the client_id and client_secret to your own in the main.py file.
 ``` Python
-sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=<your_client_id>,
-                                               client_secret=<your_client_secret>,
-                                               redirect_uri='http://localhost:8080/',
-                                               scope='user-modify-playback-state')) 
+CLIENT_ID = '<your_client_id>'
+CLIENT_SECRET = '<your_client_secret>'
 ```
 If you dont know how to get those, [here](#how-to-get-client_id-and-client_secret) is an explenation.
 
-# Use your own playlists
-First you have to get the link to the playlist or the song. "procedure"This can be done by going into Spotify, then rightclicking the playlist, clicking on share and copying the link. The result will look like the following: https://open.spotify.com/playlist/37i9dQZF1DX4jP4eebSWR9?si=9f23f9c1a8584730
+# Change default song or playlist
+In the main.py file there are 2 variable for a default song an playlist.
 
-The important part for this implementation ist 37i9dQZF1DX4jP4eebSWR9, so just cut the rest.
-
-Paste this in the uris array in play.py.
-
-```Python
-uris = [
-'0mFJCyKyW3nZS1GNbfMZY9', #gym
-'37i9dQZEVXcBYzyq5963Jf', #mix
-'2SIoGgxJQvDfNMVNaqzR9r', #lofi
-'3s6gW3ERpwFncWhi4ynmjz', #study
-'2Xt965bzJpBb2JMR6YyGTa'  #sound
-]
+``` Python
+default_song_id = '4cOdK2wGLETKBW3PvgPWqT'
+default_playlist_id = '37i9dQZEVXbMDoHDwVN2tF'
 ```
-and you can change the name accordingly in main.py
+The playlist is 'Top 50 Global', you can try for yourself what the song is. 
+To change those you need the song or playlist id, you can go into Spotify and choose a song or a playlist. Then right click it (or press the 3 dots) and press share -> copy songlink. The link will look like the following: 
+https://open.spotify.com/intl-de/track/4cOdK2wGLETKBW3PvgPWqT?si=79c891f1078b4f48
+The only important part is after the last / and before the ?, in this case '4cOdK2wGLETKBW3PvgPWqT'. Now replace the default_song_id or default_playlist_id with the new value.
 
-```Python
-# uris[0]
-button2 = tk.Button(frame1, text=<your_playlist-name>, font=("Arial", 20), command=lambda: button_click(0))
-button2.pack(side=tk.LEFT, padx=10, pady=10, fill=tk.BOTH, expand=True)
-```
+
 
 # How to get Client_id and Client_secret
 First have have to Create a Spotify Developer account.
