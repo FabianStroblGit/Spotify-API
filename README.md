@@ -43,10 +43,18 @@ default_song_id = '4cOdK2wGLETKBW3PvgPWqT'
 sp.start_playback(uris=['spotify:track:' + default_song_id])
 ```
 
-. pressong 'Play a playlist` plays the default playlist set by the author. It also uses the start_playback function of SpotifyOAuth
+- pressing 'Play a playlist` plays the default playlist set by the author. It also uses the start_playback function of SpotifyOAuth
  ```Python
 defualt_playlist_id = '37i9dQZEVXbMDoHDwVN2tF'
 sp.start_playback(context_uri='spotify:playlist:' + defualt_playlist_id)
+```
+
+- pressing 'Search for a Song' first takes the input from the text field next to the button, then searches via the Spotify search APi for the song
+```Python
+url = "https://api.spotify.com/v1/search"
+query = f"?q={item_name}&type={item_type}&limit=1"
+query_url = url + query
+result = requests.get(query_url, headers=headers)
 ```
 
 
