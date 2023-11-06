@@ -26,6 +26,7 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=CLIENT_ID,
 - The UI is created using tkinter 
 <img width="812" alt="image" src="https://github.com/FabianStroblGit/Spotify-API/assets/117905035/99d2dc28-192e-46bc-8299-c2cd7707dd62">
 
+
 - pressing 'Play' calls the start_playback() function of the instanz of SpotifyOAuth 
 ```Python
 sp.start_playback()
