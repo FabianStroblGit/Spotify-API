@@ -4,14 +4,6 @@ This Project showcases the basic usages of Spotify API. It can be operated by a 
 - play a song / playlist specified in the code
 - search and play a song or a playlist 
 
-# How it works
-- An instanze of SpotifyOAuth is created using your Spotify client_id and client_secret.(More on this [later](#use-it-yourself).
-
-- A n authentication header is generated in search.py to be used later to search for a song or playlist.
-
-- The UI is created using tkinter 
-
-
 # Use it yourself
 To use this for yourself, you have to change the client_id and client_secret to your own in the main.py file.
 ``` Python
@@ -19,6 +11,30 @@ CLIENT_ID = '<your_client_id>'
 CLIENT_SECRET = '<your_client_secret>'
 ```
 If you dont know how to get those, [here](#how-to-get-client_id-and-client_secret) is an explenation.
+
+
+# How it works
+- An instanze of SpotifyOAuth is created using your Spotify client_id and client_secret.(More on this [later](#use-it-yourself))
+```Python
+sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=CLIENT_ID,
+                                               client_secret=CLIENT_SECRET,
+                                               redirect_uri='http://localhost:8080/',
+                                               scope='user-modify-playback-state'))
+```
+- An authentication header is generated in search.py to be used later to search for a song or playlist.
+
+- The UI is created using tkinter 
+<img width="812" alt="image" src="https://github.com/FabianStroblGit/Spotify-API/assets/117905035/99d2dc28-192e-46bc-8299-c2cd7707dd62">
+
+- calling 'Play' calls the start_playback() function of the instanz of SpotifyOAuth sp
+```Python
+sp.start_playback()
+```
+- calling 'Pause' calls the pause_playback() function of the instanz of SpotifyOAuth sp
+```Python
+sp.pause_playback()
+```
+
 
 # Change default song or playlist
 In the main.py file there are 2 variable for a default song an playlist.
