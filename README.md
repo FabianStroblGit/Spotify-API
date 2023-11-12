@@ -4,7 +4,7 @@ This Project showcases the basic usages of Spotify API via Python. It can be ope
 - play a song / playlist specified in the code
 - search and play a song or a playlist 
 
-# Use it yourself
+# Getting Started
 To use this for yourself, you have to change the client_id and client_secret to your own in the main.py file.
 ``` Python
 CLIENT_ID = '<your_client_id>'
@@ -66,6 +66,12 @@ artist = json_result["tracks"]["items"][0]["artists"][0]["name"]
 print(f"Playing the song {name} by {artist}")
 return json_result["tracks"]["items"][0]["id"]
 ```
+
+Those are then played by the start_playback() function of SpotifyOAuth
+```Python
+play_song(search_for_item(song_name,'track',header))
+```
+
 
 # Change default song or playlist
 In the main.py file there are 2 variable for a default song an playlist.
